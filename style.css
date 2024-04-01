@@ -1,0 +1,78 @@
+*, *:before, *::after
+ {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: #0F62FE;
+}
+#head-text {
+    color: #0F62FE;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.container {
+    width: 40%;
+    top: 30%;
+    left:50%;
+    background: #FFFFFF;
+    border-radius: 1%;
+    min-width: 450px;
+    min-height: 100px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+
+}
+.task, #taskname{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+#check-task{
+    margin-left: 20px;
+    padding: 10px;
+}
+.checked {
+    text-decoration:line-through;
+}
+    
+p {
+    width: 90%;
+    margin: 0 20px;
+}
+
+#taskbar {
+    width: 75%;
+/*Margin shorthand, margin: top right bottom left; */
+    margin: 60px 20px 60px 10px;
+    border: solid 3px #77a5f9;
+    padding: 10px;
+    border-radius: 5px;
+}
+button {
+    background: #0F62FE;
+    padding: 10px;
+    width: 15%;
+    border-radius: 5px;
+    color: white;   
+}
+
+.tasks{
+    overflow-y:scroll;
+    max-height: 300px;
+}
+.tasks::-webkit-scrollbar{
+    width: 10px;
+}
+.tasks::-webkit-scrollbar-track{
+    background: #BAE6FF;
+    border-radius: 25px;
+}
+.tasks::-webkit-scrollbar-thumb{
+    background: #0D75EC;
+    border-radius: 25px;
+}
